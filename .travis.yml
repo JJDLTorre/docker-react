@@ -5,8 +5,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t JJDLTorre/docker-react -f Dockerfile.dev .
+  - docker build -t jjdltorre/docker-react -f Dockerfile.dev .
 
 script:
-  # - docker run JJDLTorre/docker-react npm run test -- --coverage
-  - docker run -e CI=true JJDLTorre/docker-react npm run test
+  # - docker run jjdltorre/docker-react npm run test -- --coverage
+  - docker run -e CI=true jjdltorre/docker-react npm run test
